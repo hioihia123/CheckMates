@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #f0f0f0;
+}
+
+body.switching * {
+  transition: all 0.2s;
+}
+
+body.dark {
+  background-color: #202020;
+}
+body.dark h1 {
+  color: #fafafa;
+}
+body.dark h3 {
+  color: white;
+}
+body.dark h4 {
+  color: white;
+}
+/* Change CheckMates background logo to orange in dark mode */
+body.dark #pelogo {
+  background: #8e3900;
+  background: linear-gradient(135deg, #a14000 0%, #9d3f00 100%);
+}
+
+/* Change loader to green in dark mode */
+body.dark .loader {
+  background-color: #003c00;
+  opacity: 1; /* Ensure it's fully visible */
+}
+
+body.dark .container{
+  color: white;
+}
+body.dark .loader {
+  --path: #ffffff;
+}
+body.dark .card {
+  box-shadow: 0 70px 63px -60px rgb(255, 255, 255);
+
+}
+
+body.dark .dark-mode-switch .bg {
+  border-color: #202020;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 230px;
+  right: 140px;
+}
+
+h1 {
+  margin-top: 40px;
+  color: #101010;
+}
+
+.dark-mode-switch {
+  position: fixed; /* Ensures it stays in the same position as you scroll */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.dark-mode-switch:hover .circle {
+  margin-left: 15px;
+  margin-top: -95px;
+}
+.dark-mode-switch .inner {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.dark-mode-switch .bg {
+  width: 80px;
+  height: 80px;
+  background-color: #202020;
+  border: 1px solid #f0f0f0;
+  border-radius: 40px;
+  transition: all 0s;
+}
+.dark-mode-switch .circle {
+  margin-left: 20px;
+  margin-top: -100px;
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dark-mode-switch .rays .ray {
+  position: absolute;
+  left: 38px;
+  top: 40px;
+  width: 4px;
+  height: 8px;
+  background-color: #fbc02d;
+  transform-origin: 2px 0;
+  opacity: 0;
+}
+.dark-mode-switch .rays .ray:nth-child(1) {
+  transform: rotate(-180deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(2) {
+  transform: rotate(-225deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(3) {
+  transform: rotate(-270deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(4) {
+  transform: rotate(-315deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(5) {
+  transform: rotate(-360deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(6) {
+  transform: rotate(-405deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(7) {
+  transform: rotate(-450deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(8) {
+  transform: rotate(-495deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(1) {
+  transform: rotate(-180deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(2) {
+  transform: rotate(-225deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(3) {
+  transform: rotate(-270deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(4) {
+  transform: rotate(-315deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(5) {
+  transform: rotate(-360deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(6) {
+  transform: rotate(-405deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(7) {
+  transform: rotate(-450deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(8) {
+  transform: rotate(-495deg) translateY(52px);
+}
+.dark-mode-switch.dark .circle {
+  margin-left: 0;
+  margin-top: -80px;
+  background-color: #fbc02d;
+  border-color: #f9a825;
+}
+.dark-mode-switch.dark .rays .ray {
+  opacity: 1;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(1) {
+  transform: rotate(-180deg) translateY(48px);
+  transition: all 0.4s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(2) {
+  transform: rotate(-225deg) translateY(48px);
+  transition: all 0.6s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(3) {
+  transform: rotate(-270deg) translateY(48px);
+  transition: all 0.8s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(4) {
+  transform: rotate(-315deg) translateY(48px);
+  transition: all 1s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(5) {
+  transform: rotate(-360deg) translateY(48px);
+  transition: all 1.2s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(6) {
+  transform: rotate(-405deg) translateY(48px);
+  transition: all 1.4s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(7) {
+  transform: rotate(-450deg) translateY(48px);
+  transition: all 1.6s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(8) {
+  transform: rotate(-495deg) translateY(48px);
+  transition: all 1.8s;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h3>Page updating...</h3>
+    <h4>-The Zero Dollar Meal Project Tech Team</h4>
+</div>
+<main>
+  <div class="dark-mode-switch">
+    <div class="inner">
+      <div class="bg"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="rays">
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+    </div>
+  </div>
+  <div id="background"></div>
+  <div class="logo-Wrapper">
+  <div id="logocontainer" onclick=fill()>
+    <div id="pelogo">CheckMates</div>
+    <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+    <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+    <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+    <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+  </div>
+</main>
+<script  src="./script.js"></script>
+</body>
+</html>
