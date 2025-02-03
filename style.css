@@ -53,7 +53,7 @@ body{
   display: block;
   position: fixed;
   bottom: 5px; /* Distance from the top */
-  right: 150px; /* Distance from the left */
+  right: 100px; /* Distance from the left */
   transform: translate(-50%, -50%);
   width: auto; /* Allow width to expand */
   height: auto; /* Allow height to expand */
@@ -84,12 +84,6 @@ body{
   word-wrap: break-word; /* Break long words */
 }
 
-@media screen and (min-width: 480px) {
-  #logocontainer{
-    bottom: 5px; /* Distance from the top */
-    right: 300px; /* Distance from the left */
-  }
-}
 
 .loader{
   display:block;
