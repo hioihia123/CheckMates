@@ -218,3 +218,56 @@ button:hover {
       font-size: 1.5rem;
   }
 }
+
+/* Mobile-first approach */
+.wrapper {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h3, h4 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #004c1d;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+  h3 {
+      font-size: 3.5rem;
+  }
+  h4 {
+      font-size: 1.5rem;
+  }
+  .form-container {
+      padding: 30px;
+  }
+}
+
+/* Dark mode adjustments */
+body.dark h3 {
+  color: #ff6600;
+}
+body.dark h4 {
+  color: #ccc;
+}
