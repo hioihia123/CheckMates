@@ -84,6 +84,13 @@ body{
   word-wrap: break-word; /* Break long words */
 }
 
+@media screen and (min-width: 480px) {
+  #logocontainer{
+    bottom: 5px; /* Distance from the top */
+    right: 300px; /* Distance from the left */
+  }
+}
+
 .loader{
   display:block;
   position:absolute;
