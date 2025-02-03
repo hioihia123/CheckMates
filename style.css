@@ -98,15 +98,23 @@ body{
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
   #logocontainer {
-    top: 15%; /* Ensure it's visible */
-    left: 50%;
-    transform: translate(-50%, 0); /* Center it */
+    top: 20%; /* Visible distance from top */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Ensure it's centered */
+    padding: 1vh; /* Small padding */
+    width: auto; /* Expand width dynamically */
+    height: auto; /* Expand height dynamically */
+    overflow: visible; /* Ensure nothing is clipped */
   }
   #pelogo {
-    font-size: clamp(2.5vh, 5vw, 4vh); /* Adjust size */
-    padding: 1vh; /* Keep padding smaller */
+    font-size: clamp(2.5vh, 5vw, 4vh); /* Adjust font size for mobile */
+    line-height: 1.2; /* Optimize spacing */
+    word-wrap: break-word; /* Prevent long words from breaking layout */
+    text-align: center; /* Center text */
+    padding: 1vh; /* Add padding for readability */
   }
 }
+
 
 
 .loader{
