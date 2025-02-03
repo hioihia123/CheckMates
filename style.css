@@ -52,8 +52,8 @@ body{
 #logocontainer {
   display: block;
   position: fixed;
-  top: 70px; /* Distance from the top */
-  right: 780px; /* Distance from the left */
+  bottom: 70px; /* Distance from the top */
+  right: 600px; /* Distance from the left */
   transform: translate(-50%, -50%);
   width: auto; /* Allow width to expand */
   height: auto; /* Allow height to expand */
