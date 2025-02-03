@@ -84,20 +84,6 @@ body{
   word-wrap: break-word; /* Break long words */
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) { /* Tablets */
-  #logocontainer {
-    top: 15%;
-    left: 70px;
-  }
-  #pelogo {
-    font-size: clamp(3vh, 4vw, 6vh);
-  }
-}
-
-
-
-
 .loader{
   display:block;
   position:absolute;
