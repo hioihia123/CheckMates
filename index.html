@@ -345,7 +345,7 @@
 
       #logocontainer {
         right: 50%;
-        transform: translateX(50%);
+        transform: translateX(100%);
         bottom: 20px;
       }
 
@@ -354,34 +354,7 @@
         color: rgb(20, 77, 0);
         right: 50%;
       }
-
-       /* Reduce loader thickness for smaller screens */
-  .loader {
-    height: 1.5vh !important; /* Override inline styles */
-    width: 1.5vh !important;
-  }
-
-  /* Adjust animation keyframes for smaller loader size */
-  @keyframes slide1 {
-    60% { width: 18vh; margin-left: 0; } /* Reduced from 22vh */
-    100% { margin-left: 28vh; } /* Reduced from 32vh */
-  }
-
-  @keyframes slide2 {
-    60% { height: 18vh; margin-top: 0; }
-    100% { margin-top: 28vh; }
-  }
-
-  @keyframes slide3 {
-    60% { width: 18vh; margin-right: 0; }
-    100% { margin-right: 28vh; }
-  }
-
-  @keyframes slide4 {
-    60% { height: 18vh; margin-bottom: 0; }
-    100% { margin-bottom: 28vh; }
-  }
-}
+    }
 
     @media (max-width: 480px) {
       h3 {
@@ -397,34 +370,6 @@
       #pelogo {
         font-size: clamp(2.5vh, 5vw, 5vh);
       }
-
-      /* Make loader even thinner for phones */
-  .loader {
-    height: 1vh !important;
-    width: 1vh !important;
-  }
-
-  /* Further reduce animation distances */
-  @keyframes slide1 {
-    60% { width: 15vh; margin-left: 0; }
-    100% { margin-left: 22vh; }
-  }
-
-  @keyframes slide2 {
-    60% { height: 15vh; margin-top: 0; }
-    100% { margin-top: 22vh; }
-  }
-
-  @keyframes slide3 {
-    60% { width: 15vh; margin-right: 0; }
-    100% { margin-right: 22vh; }
-  }
-
-  @keyframes slide4 {
-    60% { height: 15vh; margin-bottom: 0; }
-    100% { margin-bottom: 22vh; }
-  }
-      
     }
   </style>
 </head>
