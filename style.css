@@ -95,16 +95,19 @@ body{
   }
 }
 
-@media screen and (max-width: 480px) { /* Smartphones */
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
   #logocontainer {
-    top: 20%;
-    left: 70px;
+    top: 15%; /* Ensure it's visible */
+    left: 50%;
+    transform: translate(-50%, 0); /* Center it */
   }
   #pelogo {
-    font-size: clamp(2.5vh, 5vw, 5vh);
-    padding: 1vh;
+    font-size: clamp(2.5vh, 5vw, 4vh); /* Adjust size */
+    padding: 1vh; /* Keep padding smaller */
   }
 }
+
 
 .loader{
   display:block;
