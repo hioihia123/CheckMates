@@ -49,8 +49,6 @@ body{
 }
 
 
-
-
 #logocontainer {
   display: block;
   position: fixed;
@@ -90,6 +88,7 @@ body{
 @media screen and (max-width: 768px) { /* Tablets */
   #logocontainer {
     top: 15%;
+    left: 70px;
   }
   #pelogo {
     font-size: clamp(3vh, 4vw, 6vh);
@@ -99,6 +98,7 @@ body{
 @media screen and (max-width: 480px) { /* Smartphones */
   #logocontainer {
     top: 20%;
+    left: 70px;
   }
   #pelogo {
     font-size: clamp(2.5vh, 5vw, 5vh);
