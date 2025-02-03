@@ -100,21 +100,21 @@ body{
 /*Pretty complex animation, so each side needs its own @keyframes.*/
 
 @keyframes slide1{
-  60%{width:32vh; margin-left:0;}
+  60%{width:22vh; margin-left:0;}
   100%{margin-left:32vh;}
 }
 
 @keyframes slide2{
-  60%{height:32vh; margin-top:1;}
+  60%{height:22vh; margin-top:1;}
   100%{margin-top:32vh;}
 }
 
 @keyframes slide3{
-  60%{width:32vh; margin-right:1;}
+  60%{width:22vh; margin-right:1;}
   100%{margin-right:32vh;}
 }
 
 @keyframes slide4{
-  60%{height:32vh; margin-bottom:1}
+  60%{height:22vh; margin-bottom:1}
   100%{margin-bottom:32vh;}
 }
