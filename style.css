@@ -53,7 +53,7 @@ body{
   display: block;
   position: fixed;
   bottom: 5px; /* Distance from the top */
-  right: 300px; /* Distance from the left */
+  right: 150px; /* Distance from the left */
   transform: translate(-50%, -50%);
   width: auto; /* Allow width to expand */
   height: auto; /* Allow height to expand */
