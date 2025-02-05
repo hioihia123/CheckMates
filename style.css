@@ -198,7 +198,6 @@ button:hover {
       border-radius: 12px;
   }
   .form-title{
-    transform: translateX(80px);
     transform: none;       /* Remove the right shift */
     text-align: center;    /* Center the title on small screens */
 
@@ -212,6 +211,10 @@ button:hover {
   
   .form-title {
       font-size: 1.4rem;
+      transform: none;       /* Remove the right shift */
+      text-align: center;    /* Center the title on small screens */
+
+      /*transform: translateX(120px); */
   }
   
   input {
