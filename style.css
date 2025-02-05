@@ -1,4 +1,3 @@
-
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -468,47 +467,4 @@ body.dark label {
 
 body.dark .checkbox-label {
   color: #d0d0d0;
-}
-
-@media (min-width: 1024px) {
-  /* Center the form on large screens */
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    position: relative;
-    bottom: 0;
-    right: 0;
-  }
-
-  .form-container {
-    width: 40%;
-    max-width: 500px;
-    padding: 2rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Position CheckMates at the top */
-  .wrapper {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #004c1d;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-    color: #666;
-  }
 }
