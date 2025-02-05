@@ -392,7 +392,8 @@ input, button {
     padding: 0.6rem;
   }
   .form-title{
-    transform: translateX(190px);
+    transform: none;
+    text-align: center;
 
   }
 }
@@ -408,9 +409,8 @@ input, button {
     margin: 10px auto;
   }
   .form-title{
-    transform: translateX(190px);
-
-
+    transform: none;
+    text-align: center;
   }
 }
 
