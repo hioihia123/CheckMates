@@ -197,6 +197,10 @@ button:hover {
       padding: 1.5rem;
       border-radius: 12px;
   }
+  .form-title{
+    transform: translateX(80px);
+
+  }
 }
 
 @media (max-width: 480px) {
