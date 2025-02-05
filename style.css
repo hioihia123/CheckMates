@@ -97,6 +97,7 @@ body.dark h4 {
   font-size: 1.8rem;
   letter-spacing: -1px;
   color: #2d3436;
+  transform: translateX(80px);
 }
 
 
@@ -129,7 +130,7 @@ input::placeholder {
 
 input:focus {
   outline: none;
-  border-color: #c55200;
+  border-color: #00672d;
 }
 
 .date-group {
@@ -214,9 +215,13 @@ button:hover {
 
 /* Mobile-first approach */
 .wrapper {
+  position: fixed;
+  top: 20px;
+  width: 100%;
   text-align: center;
-  padding: 20px 0;
+  z-index: 1000; /* if needed so it stays above other content */
 }
+
 
 h3, h4 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -470,4 +475,26 @@ body.dark label {
 
 body.dark .checkbox-label {
   color: #d0d0d0;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.error input {
+  border-color: #dc3545 !important;
+}
+.success input {
+  border-color: #28a745 !important;
+}
+
+.checkbox-group {
+  margin-top: 1rem;
+}
+
+#dateError {
+  margin-top: 0.5rem;
 }

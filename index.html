@@ -15,7 +15,7 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #fff;
       margin: 20px;
-      opacity: 0;
+      opacity: 1;
       transition: opacity 1s;
       margin-bottom: 20px;
     }
@@ -85,18 +85,6 @@
       color: white;
     }
 
-    /* Change CheckMates background logo to orange in dark mode */
-    body.dark #pelogo {
-      background: #8e3900;
-      background: linear-gradient(135deg, #a14000 0%, #9d3f00 100%);
-    }
-
-    /* Change loader to green in dark mode */
-    body.dark .loader {
-      background-color: #003c00;
-      opacity: 1; /* Ensure it's fully visible */
-    }
-
     body.dark .container {
       color: white;
     }
@@ -111,14 +99,14 @@
     }
 
     main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      bottom: 230px;
-      right: 140px;
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* vertical centering */
+    min-height: 100vh;  /* make main span the entire viewport height */
+    margin: 0 auto;
+    width: 100%;
+   }
     h1 {
       margin-top: 40px;
       color: #101010;
@@ -388,31 +376,29 @@
     </div>
     <div id="background"></div>
     <div class="form-container">
-      <h1 class="form-title">Student Check In</h1>
+      <h2 class="form-title">Student Check In</h2>
       <form id="studentForm">
-          <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" required placeholder="Enter your full name">
-          </div>
-
-          <div class="form-group">
-              <label for="studentId">Student ID</label>
-              <input type="text" id="studentId" required placeholder="Enter your student ID">
-          </div>
-
-          <div class="form-group">
-              <label>Date</label>
-              <div class="date-group">
-                  <input type="date" id="date" disabled>
-                  <label class="checkbox-label">
-                      <input type="checkbox" id="dateCheckbox"> 
-                      Use today's date
-                  </label>
-              </div>
-          </div>
-
-          <button type="submit">Submit</button>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="Enter your full name">
+          <div class="error-message" id="nameError">Name must contain only letters and spaces</div>
+        </div>
+    
+        <div class="form-group">
+          <label for="studentId">Student ID</label>
+          <input type="text" id="studentId" required placeholder="Enter your student ID">
+          <div class="error-message" id="idError">ID must contain both letters and numbers</div>
+        </div>
+    
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date">
+          <div class="error-message" id="dateError">You must use today's date</div>
+        </div>
+    
+        <button type="submit">Submit</button>
       </form>
+    </div>
   </main>
   <script src="./script.js"></script>
 </body>
