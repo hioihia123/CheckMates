@@ -338,8 +338,8 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
-    transform: none;       /* Remove the right shift */
-    text-align: center;    /* Center the title on small screens */
+    transform: translateX(190px);
+
   }
 
   input {
@@ -415,8 +415,8 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
-    transform: none;       /* Remove the right shift */
-    text-align: center;    /* Center the title on small screens */
+    transform: translateX(190px);
+
   }
 
   input {
@@ -469,8 +469,7 @@ input, button {
     padding: 0.6rem;
   }
   .form-title{
-    transform: none;       /* Remove the right shift */
-    text-align: center;    /* Center the title on small screens */
+    transform: translateX(190px);
 
   }
 }
@@ -486,8 +485,8 @@ input, button {
     margin: 10px auto;
   }
   .form-title{
-    transform: none;       /* Remove the right shift */
-    text-align: center;    /* Center the title on small screens */
+    transform: translateX(190px);
+
 
   }
 }
