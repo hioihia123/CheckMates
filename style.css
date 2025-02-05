@@ -210,11 +210,10 @@ button:hover {
   }
   
   .form-title {
-      font-size: 1.4rem;
-      transform: none;       /* Remove the right shift */
-      text-align: center;    /* Center the title on small screens */
-
-      /*transform: translateX(120px); */
+    font-size: 1.4rem;
+    transform: none;       /* Remove any shift */
+    text-align: center;    /* Center the title */
+    margin-bottom: 1.2rem;
   }
   
   input {
@@ -338,84 +337,8 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
-    transform: translateX(190px);
-
-  }
-
-  input {
-    padding: 0.7rem;
-    font-size: 0.9rem;
-  }
-
-  button {
-    padding: 0.8rem;
-    font-size: 0.95rem;
-  }
-
-  .date-group {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-
-  .dark-mode-switch {
-    top: 10px;
-    right: 10px;
-    width: 60px;
-    height: 60px;
-  }
-
-  .dark-mode-switch .inner,
-  .dark-mode-switch .bg,
-  .dark-mode-switch .circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-  }
-}
-
-/* Updated Mobile-First Media Queries */
-@media screen and (max-width: 428px) { /* Covers iPhone 11 Pro (414px) and similar */
-  main {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    padding: 0 15px;
-  }
-
-  .wrapper {
-    padding: 15px 0;
-  }
-
-  h3 {
-    font-size: 2rem;
-    right: auto;
-    width: 100%;
+    transform: none;
     text-align: center;
-    position: static;
-    margin-top: 15px;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-    right: auto;
-    width: 100%;
-    text-align: center;
-    position: static;
-    margin-top: 8px;
-  }
-
-  .form-container {
-    width: 100%;
-    padding: 1.2rem;
-    margin: 15px 0;
-    border-radius: 12px;
-  }
-
-  .form-title {
-    font-size: 1.4rem;
-    margin-bottom: 1.2rem;
-    transform: translateX(190px);
 
   }
 
