@@ -407,7 +407,7 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
-    transform: translateX(80px);
+    transform: translateX(120px);
   }
 
   input {
