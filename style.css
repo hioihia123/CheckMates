@@ -215,6 +215,10 @@ button:hover {
   input {
       padding: 0.7rem;
   }
+  .form-title{
+    transform: translateX(80px);
+
+  }
 }
 
 /* Mobile-first approach */
@@ -403,6 +407,7 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
+    transform: translateX(80px);
   }
 
   input {
@@ -454,6 +459,10 @@ input, button {
   input {
     padding: 0.6rem;
   }
+  .form-title{
+    transform: translateX(80px);
+
+  }
 }
 
 /* Landscape orientation adjustments */
@@ -465,6 +474,10 @@ input, button {
   .form-container {
     max-width: 90%;
     margin: 10px auto;
+  }
+  .form-title{
+    transform: translateX(80px);
+
   }
 }
 
