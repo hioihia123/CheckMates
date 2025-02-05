@@ -412,7 +412,6 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
-    transform: translateX(120px);
     transform: none;       /* Remove the right shift */
     text-align: center;    /* Center the title on small screens */
   }
@@ -467,7 +466,6 @@ input, button {
     padding: 0.6rem;
   }
   .form-title{
-    transform: translateX(120px);
     transform: none;       /* Remove the right shift */
     text-align: center;    /* Center the title on small screens */
 
@@ -485,7 +483,6 @@ input, button {
     margin: 10px auto;
   }
   .form-title{
-    transform: translateX(120px);
     transform: none;       /* Remove the right shift */
     text-align: center;    /* Center the title on small screens */
 
