@@ -332,6 +332,7 @@ input, button {
   .form-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
+    transform: translateX(120px);
   }
 
   input {
@@ -460,7 +461,7 @@ input, button {
     padding: 0.6rem;
   }
   .form-title{
-    transform: translateX(80px);
+    transform: translateX(120px);
 
   }
 }
@@ -476,7 +477,7 @@ input, button {
     margin: 10px auto;
   }
   .form-title{
-    transform: translateX(80px);
+    transform: translateX(120px);
 
   }
 }
