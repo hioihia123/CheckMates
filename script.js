@@ -83,3 +83,17 @@ Q('.dark-mode-switch').addEventListener('click', (ev) => {
       ? (isDarkMode ? "#074e02" : "#f76b00")  // Green in dark mode, Orange in light mode
       : "transparent";
   }
+
+  // Get the time input element.
+const timeInput = document.getElementById('time');
+
+// Function to auto-fill time input.
+function fillTime() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  timeInput.value = `${hours}:${minutes}`;
+}
+
+// Call fillTime when the DOM is fully loaded.
+document.addEventListener('DOMContentLoaded', fillTime);
