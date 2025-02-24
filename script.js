@@ -3,7 +3,6 @@ const form = document.getElementById('studentForm');
 const nameInput = document.getElementById('name');
 const studentIdInput = document.getElementById('studentId');
 const dateInput = document.getElementById('date');
-const timeInput = document.getElementById('time');
 
 // Regular Expressions
 const nameRegex = /^[A-Za-z\s'-]+$/;
