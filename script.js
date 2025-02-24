@@ -4,6 +4,7 @@ const nameInput = document.getElementById('name');
 const studentIdInput = document.getElementById('studentId');
 const dateInput = document.getElementById('date');
 const timeInput = document.getElementById('time');
+const timeError = document.getElementById('timeError');
 
 // Regular Expressions
 const nameRegex = /^[A-Za-z\s'-]+$/;
@@ -29,7 +30,6 @@ const validateDate = () => {
   toggleValidationState(dateInput, isValid, 'dateError');
   return isValid;
 };
-const timeError = document.getElementById('timeError');
 
 const validateTime = () => {
   // Get current time in minutes since midnight
@@ -49,18 +49,6 @@ const validateTime = () => {
   return isValid;
 };
 
-// Example helper function to show/hide error messages:
-function toggleValidationState(input, isValid, errorId) {
-  const errorElement = document.getElementById(errorId);
-  input.parentElement.classList.toggle('error', !isValid);
-  input.parentElement.classList.toggle('success', isValid);
-  errorElement.style.display = isValid ? 'none' : 'block';
-}
-
-// Optionally, run the validation on input change:
-timeInput.addEventListener('input', validateTime);
-
-
 // Validation Helper
 const toggleValidationState = (input, isValid, errorId) => {
   const errorElement = document.getElementById(errorId);
@@ -75,6 +63,8 @@ const toggleValidationState = (input, isValid, errorId) => {
 nameInput.addEventListener('input', validateName);
 studentIdInput.addEventListener('input', validateStudentId);
 dateInput.addEventListener('change', validateDate);
+timeInput.addEventListener('input', validateTime);
+
 
 // Form Submission
 form.addEventListener('submit', (e) => {
