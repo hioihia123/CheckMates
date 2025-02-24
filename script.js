@@ -4,7 +4,6 @@ const nameInput = document.getElementById('name');
 const studentIdInput = document.getElementById('studentId');
 const dateInput = document.getElementById('date');
 const timeInput = document.getElementById('time');
-const timeError = document.getElementById('timeError');
 
 // Regular Expressions
 const nameRegex = /^[A-Za-z\s'-]+$/;
@@ -30,6 +29,7 @@ const validateDate = () => {
   toggleValidationState(dateInput, isValid, 'dateError');
   return isValid;
 };
+const timeError = document.getElementById('timeError');
 
 const validateTime = () => {
   // Get current time in minutes since midnight
@@ -48,6 +48,17 @@ const validateTime = () => {
   toggleValidationState(timeInput, isValid, 'timeError');
   return isValid;
 };
+
+// Example helper function to show/hide error messages:
+function toggleValidationState(input, isValid, errorId) {
+  const errorElement = document.getElementById(errorId);
+  input.parentElement.classList.toggle('error', !isValid);
+  input.parentElement.classList.toggle('success', isValid);
+  errorElement.style.display = isValid ? 'none' : 'block';
+}
+
+// Optionally, run the validation on input change:
+timeInput.addEventListener('input', validateTime);
 
 
 // Validation Helper
@@ -107,7 +118,8 @@ Q('.dark-mode-switch').addEventListener('click', (ev) => {
       : "transparent";
   }
 
-  
+  // Get the time input element.
+const timeInput = document.getElementById('time');
 
 // Function to auto-fill time input.
 function fillTime() {
