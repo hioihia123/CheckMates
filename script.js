@@ -3,11 +3,8 @@ const form = document.getElementById('studentForm');
 const nameInput = document.getElementById('name');
 const studentIdInput = document.getElementById('studentId');
 const dateInput = document.getElementById('date');
-<<<<<<< HEAD
 const timeInput = document.getElementById('time');
 const timeError = document.getElementById('timeError');
-=======
->>>>>>> parent of be05371 (Update script.js)
 
 // Regular Expressions
 const nameRegex = /^[A-Za-z\s'-]+$/;
@@ -34,7 +31,6 @@ const validateDate = () => {
   return isValid;
 };
 
-<<<<<<< HEAD
 const validateTime = () => {
   // Get current time in minutes since midnight
   const now = new Date();
@@ -53,8 +49,7 @@ const validateTime = () => {
   return isValid;
 };
 
-=======
->>>>>>> parent of be05371 (Update script.js)
+
 // Validation Helper
 const toggleValidationState = (input, isValid, errorId) => {
   const errorElement = document.getElementById(errorId);
@@ -112,8 +107,7 @@ Q('.dark-mode-switch').addEventListener('click', (ev) => {
       : "transparent";
   }
 
-  // Get the time input element.
-const timeInput = document.getElementById('time');
+  
 
 // Function to auto-fill time input.
 function fillTime() {
